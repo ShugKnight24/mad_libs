@@ -1,0 +1,12 @@
+body{
+
+}
+
+li{
+  list-style-type: none;
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
