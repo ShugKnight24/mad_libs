@@ -1,11 +1,11 @@
 <div ng-controller="madLibsViewController">
   <h1>The Maddest Lib of My Life</h1>
   <p>
-  Dearest Mr. and Mrs. {{lastName || "(Your Lover's Last Name)"}},
+  Dearest Mr. and Mrs. <span>{{lastName || "(Your Lover's Last Name)"}}</span>,
 
-  Will you let me {{verb || "(a verb)"}} your {{loveInterest}}. Ever since I have laid {{bodyPart}} on {{femaleName}}, I have {{verb2 || "(a verb)" }} madly in love with her. I wish that she will be the {{noun}} of my {{plural}} and that someday we will {{verb3 || "(a verb)" }} happily ever after. I have a {{noun2}} as a/an {{occupation}} that pays {{salary}} each month. I promise to {{verb4 || "(a verb)" }} {{femaleName}} with kindness and respect.
+  Will you let me <span>{{verb || "(a verb)"}}</span> your <span>{{loveInterest}}</span>. Ever since I have laid <span>{{bodyPart}}</span> on <span>{{femaleName}}</span>, I have <span>{{verb2 || "(a verb)"}}</span> madly in love with her. I wish that she will be the <span>{{noun}}</span> of my <span>{{plural}}</span> and that someday we will <span>{{verb3 || "(a verb)"}}</span> happily ever after. I have a <span>{{noun2}}</span> as a/an <span>{{occupation}}</span> that pays <span>{{salary}}</span> each month. I promise to <span>{{verb4 || "(a verb)"}}</span> <span>{{femaleName}}</span> with kindness and respect.
 
   Sincerely,
-  {{firstName}}{{lastName2}}
+  <span>{{firstName}}</span> <span>{{lastName2}}</span>
   </p>
 </div>

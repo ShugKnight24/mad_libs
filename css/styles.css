@@ -10,3 +10,9 @@ li{
 .hidden {
   display: none;
 }
+
+span{
+  background-color: black;
+  color: red;
+  font-weight: bold;
+}

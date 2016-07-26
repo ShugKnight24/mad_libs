@@ -2,9 +2,11 @@
 
 var madLibs = angular.module("madLibs");
 
-madLibs.controller("madLibsFormController",["$scope", function($scope, madLibService, $location){
+//controller for the form
+madLibs.controller("madLibsFormController",["$scope","madLibService","$location", function($scope, madLibService, $location){
+  //Link to form via madLibFun function on click
   $scope.madLibFun = function (){
-    madLibService.lastname = $scope.lastname;
+    madLibService.lastName = $scope.lastName;
     madLibService.verb = $scope.verb;
     madLibService.loveInterest = $scope.loveInterest;
     madLibService.bodyPart = $scope.bodyPart;

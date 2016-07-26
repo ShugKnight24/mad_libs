@@ -2,8 +2,9 @@
 
 var madLibs = angular.module("madLibs");
 
-madLibs.controller("madLibsViewController",["$scope", function($scope, madLibService){
-  $scope.lastname = madLibService.lastname ;
+//controller for the view
+madLibs.controller("madLibsViewController",["$scope","madLibService","$location", function($scope, madLibService){
+  $scope.lastName = madLibService.lastName;
   $scope.verb = madLibService.verb;
   $scope.loveInterest = madLibService.loveInterest;
   $scope.bodyPart = madLibService.bodyPart;
